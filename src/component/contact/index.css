@@ -1,0 +1,51 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__header {
+    display: grid;
+    grid-template-columns: 80px 100%;
+    gap: 20px;
+}
+
+.contact__picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 45%;
+}
+
+.contact__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.contact__value {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.contact_description {
+    display: flex;
+    font-size: 20px;
+    color: #000;
+    font-weight: lighter;
+}
+
+.contact__value:not(:last-child)::after{   
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+    background-color: #000;
+}
